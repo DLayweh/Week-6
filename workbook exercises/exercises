@@ -21,3 +21,32 @@ console.log(matching.item + " costs $" + matching.price);
 else {
 console.log("Item " + searchId + " not found!");
 }
+
+
+//pg 16
+let kids = [
+    { first : "Natalie", last : "Plyers" },
+    { first: "Brittany", last: "Ray" },
+    { first: "Zachary", last: "Westly" }
+    ];
+    function displayKid(arrayElement) {
+    console.log(arrayElement.first + " " + arrayElement.last);
+    }
+    kids.forEach(displayKid);
+
+
+    //pg18
+
+    let kids = [
+        { first : "Natalie", last : "Plyers" },
+        { first: "Brittany", last: "Ray" },
+        { first: "Zachary", last: "Westly" }
+        ];
+        function buildFullName(arrayElement) {
+        return arrayElement.first + " " + arrayElement.last;
+        }
+        function displayName(arrayElement) {
+        console.log(arrayElement);
+        }
+        let namesList = kids.map(buildFullName);
+        namesList.forEach(displayName);

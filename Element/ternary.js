@@ -1,19 +1,21 @@
-let input = true;
 
-let option = undefined
+
+// ? ternary operator - make if/else value into one line
+
+let input = false;
+
+let option = undefined; // empty/nothing, unset, (null)
 
 if(input){
-    option = "yes";
+    option = "yes we can";
 }else{
-    option = "no";
+    option = "no we will not";
 }
 
 console.log("OPTION:", option);
+///////////////////////////
 
-
-function grow(c){
-    return grow(c + 1);
-}
-console.log(grow(1));
-
-fruit = ["apple", "banana", "cherry"]
+const lightColor = "GREEN";
+// EXPRESSION ? IF_TRUE : IF_FALSE
+const action = lightColor === "GREEN" ? "GO GO GO!!!" : "STOP!!!";
+console.log(action);
